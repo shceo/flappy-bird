@@ -1,0 +1,26 @@
+.birdContainer {
+    width: 43; 
+    height: 40px;
+    position: absolute;
+  
+    top: 60%;
+    left: 8%; 
+    animation: flyBird 5s linear;
+}
+
+.bird {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes flyBird {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    50% {
+        transform: translateX(50vw) translateY(-10vh); 
+    }
+    100% {
+        transform: translateX(100vw) translateY(0); 
+    }
+}

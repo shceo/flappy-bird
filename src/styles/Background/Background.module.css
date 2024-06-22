@@ -1,0 +1,19 @@
+.backgroundContainer {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/Background/background-day.png'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    position: relative; 
+    overflow: hidden;
+    /* animation: moveBack 3s linear infinite; */
+}
+/* @keyframes moveBack {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+} */

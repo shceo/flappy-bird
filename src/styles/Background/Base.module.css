@@ -1,0 +1,21 @@
+.baseContainer {
+    width: 200%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    animation: moveBase 3s linear infinite;
+}
+
+
+.base {
+    width: 100%;
+}
+
+@keyframes moveBase {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
