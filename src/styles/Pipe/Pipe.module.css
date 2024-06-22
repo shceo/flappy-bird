@@ -1,0 +1,28 @@
+.pipeContainer {
+    position: absolute;
+    
+    bottom: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: movePipe 7s linear infinite;
+    width: 100px;
+}
+
+.pipe {
+    width: 75%;
+}
+
+.gap {
+    flex-grow: 1;
+    height: 20vh;
+}
+
+@keyframes movePipe {
+    0% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
