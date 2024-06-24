@@ -3,12 +3,16 @@ import styles from '../../styles/Pipe/Pipe.module.css';
 import topPipeImage from '../../assets/Pipe/pipe_up.png'; 
 import bottomPipeImage from '../../assets/Pipe/pipe_down.png'; 
 
-const Pipe = ({ topHeight, bottomHeight }) => {
+const Pipe = ({ topHeight, bottomHeight, position }) => {
     return (
-        <div className={styles.pipeContainer}>
-            <img src={topPipeImage} alt="top pipe" className={styles.pipe} style={{ height: `${topHeight}vh` }}/>
+        <div className={styles.pipeContainer} style={{ left: `${position}vw` }}>
+            <div className={styles.topPipe} style={{ height: `${topHeight}vh` }}>
+                <img src={topPipeImage} alt="Top Pipe" className={styles.pipeImage} />
+            </div>
             <div className={styles.gap}></div>
-            <img src={bottomPipeImage} alt="bottom pipe" className={styles.pipe} style={{ height: `${bottomHeight}vh` }}/>
+            <div className={styles.bottomPipe} style={{ height: `${bottomHeight}vh` }}>
+                <img src={bottomPipeImage} alt="Bottom Pipe" className={styles.pipeImage} />
+            </div>
         </div>
     );
 };
